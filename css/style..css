@@ -30,6 +30,10 @@
     box-sizing: border-box;
     font-family: 'Montserrat';
 }
+img
+{
+    width: 80%;
+}
 .header {
     width: 100%;
     background-image: url(/img/first-screen__bgc.png);
@@ -70,7 +74,7 @@
     color:#FFFFFF;
     font-family: 'Montserrat';
     text-decoration: none;
-    font-size: 24px;
+    font-size: 16px;
 }
 .header-search
 {
@@ -451,19 +455,21 @@
     display: flex;
     align-items: flex-start;
     padding: 40px 20px;
-    gap: 30px;
+    justify-content: space-around;
 }
 .nav-logo img
 {
-    width: 260px;
-    padding-right: 40px;
+    width: 240px;
+    padding-right: 100px;
 }
-.nav-info
+.nav-contents
 {
     display: flex;
     flex-direction: column;
     width: 280px;
-    gap: 16px;
+}
+.nav-info
+{
     list-style:square;
 }
 .nav-info a
@@ -479,13 +485,14 @@
 .nav-location
 {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 306px;
 }
 .location-h
 {
     font-size: 18px;
     color: #FFFFFF;
+    padding-bottom: 10px;
 }
 .location-p
 {
@@ -511,4 +518,260 @@
 {
     color: #FFFFFF;
     font-size: 16px;
+}
+@media (max-width:992px)
+{
+    .header-logo img
+    {
+        width: 200px;
+        height: 55px;
+    }
+    .header-search
+    {
+        width: 280px;
+    }
+    
+    .header-search input
+    {
+        width: 240px;
+        height: 36px;
+        padding: 0 0;
+    }
+    .header-nav
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .con-news
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .news-info1
+    {
+        width: 380px;
+        height: 392px;
+    }
+    .info1
+    {
+        width: 340px;
+        height: 140px;
+    }
+    .info-h
+    {
+        font-size: 16px;
+    }
+    .footer__nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav-logo img
+    {
+        width: 300px;
+    }
+    .nav-location
+    {
+        padding-top: 20px;
+    }
+    .footer__addinfo
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+}
+@media (max-width:576px)
+{
+    .header-nav
+    {
+        gap: 10px;
+    }
+    .main__con:nth-child(3)
+    {
+        display: flex;
+        gap: 0;
+        flex-direction: column-reverse;
+    }
+    .con__lecIMG img
+    {
+        width: 490px;
+        padding: auto;
+        align-items: center;
+    }
+    .lecturs-em
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .con-velH
+    {
+        font-size: 26px;
+    }
+    .con-velP
+    {
+        margin-top: 30px;
+    }
+    .CONT
+    {
+        width: 240px;
+    }
+    .CONT-heading
+    {
+        font-size: 16px;
+    }
+    .main__con:nth-child(5)
+    {
+        padding: 80px 20px;
+    }
+    .footer__con
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__addinfo
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__nav
+    {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 40px;
+        gap: 20px;
+    }
+    .nav-logo
+    {
+        width: 300px;
+    }
+    .nav-contents
+    {
+        width: 300px;
+        padding-left: 20px;
+    }
+    .nav-location
+    {
+        width: 300px;
+    }
+}  
+@media (max-width:390px)
+{
+    .header-items
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header-search
+    {
+        width: 320px;
+    }
+    .header-search input
+    {
+        font-size: 18px;
+    }
+    .header-nav
+    {
+        gap:16px
+    }
+    .header-nav a
+    {
+        font-size: 14px;
+    }
+    .content
+    {
+        width: 170px;
+    }
+    .content-text{
+        font-size: 14px;
+    }
+    .content-img
+    {
+        width: 180px;
+    }
+    .photo
+    {
+        width: 140px;
+        height: 140px;
+    }
+    .photo-text
+    {
+        width: 150px;
+    }
+    .photo-text p
+    {
+        font-size: 14px;
+    }
+    .main__con:nth-child(1)
+    {
+        gap: 30px;
+    }
+    .con__lecIMG
+    {
+        width: 340px;
+    }
+    .con__lecIMG img
+    {
+        width: 300px;
+        padding: auto;
+    }
+    .main__con:nth-child(3)
+    {
+        display: flex;
+    }
+    .con-lecturs
+    {
+        width: 380px;
+    }
+    .lecturs-em{
+        width: 370px;
+    }
+    .lecturs-heading
+    {
+        width: 360px;
+        padding: 10px 40px;
+    }
+    .lecturs-heading h3
+    {
+        font-size: 18px;
+    }
+    .lecturs-paragraph
+    {
+        width: 340px;
+        padding: 10px 40px;
+
+    }
+    .lecturs-paragraph p
+    {
+        font-size: 14px;
+    }
+    .con-velP
+    {
+        width: 380px;
+    }
+    .CONT
+    {
+        width: 160px;
+        height: 360px;
+    }
+    .CONT-heading{
+        font-size: 14px;
+    }
+    .footer__addinfo
+    {
+        width: 380px;
+    }
+    .addinfo-p 
+    {
+        width: 330px;
+    }
+    .addinfo-txt
+    {
+        width: 330px;
+    }
+    .addinfo-p p
+    {
+        font-size: 12px;
+    }
+
 }
