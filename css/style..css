@@ -79,7 +79,7 @@ img
 .header-search
 {
     width: 100%;
-    max-width: 370px;
+    max-width: 350px;
     color: #FFFFFF;
     opacity: 0.6;
     padding: 10px 20px;
@@ -94,7 +94,7 @@ img
     border: 0;
     outline: none;
     padding: 24px 20px;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
 }
 ::placeholder
@@ -118,12 +118,13 @@ img
     padding-right: 80px;
     align-items: center;
     padding-bottom: 80px;
+    flex-wrap: wrap;
 }
 .content
 {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
+    max-width: 360px;
     gap: 30px;
 }
 .content-text
@@ -251,6 +252,7 @@ img
     justify-content: center;
     gap:  60px;
     padding: 80px;
+    flex-wrap: wrap;
 }
 .con__lecturs
 {
@@ -324,6 +326,7 @@ img
     align-items: center;
     align-content: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .con-velH
 {
@@ -334,7 +337,6 @@ img
 }
 .con-velP
 {
-    width: 430px;
     font-size: 18px;
     font-family: 'Montserrat';
     font-weight: 300;
@@ -349,6 +351,7 @@ img
     gap: 20px;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 .CONT
 {
@@ -386,6 +389,7 @@ img
     align-items: center;
     justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
 }
 .con-compnews
 {
@@ -404,7 +408,6 @@ img
 .news-info1
 {
     width: 416px;
-    height: 452px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -519,259 +522,167 @@ img
     color: #FFFFFF;
     font-size: 16px;
 }
-@media (max-width:992px)
+@media (max-width: 390px)
 {
-    .header-logo img
+    *
     {
-        width: 200px;
-        height: 55px;
+        margin: 0;
+        padding: 0;
     }
-    .header-search
+    .header-items
     {
-        width: 280px;
+        display: flex;
+        flex-wrap: wrap;
     }
-    
     .header-search input
     {
-        width: 240px;
-        height: 36px;
-        padding: 0 0;
+        font-size: 14px;
     }
-    .header-nav
-    {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .con-news
-    {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .news-info1
-    {
-        width: 380px;
-        height: 392px;
-    }
-    .info1
-    {
-        width: 340px;
-        height: 140px;
-    }
-    .info-h
-    {
-        font-size: 16px;
-    }
-    .footer__nav{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .nav-logo img
+    .header-search 
     {
         width: 300px;
+        padding: 0;
+        gap:0;
+        margin: 0;
+        box-sizing: border-box;
     }
-    .nav-location
-    {
-        padding-top: 20px;
-    }
-    .footer__addinfo
-    {
-        display: flex;
-        justify-content: space-between;
-        gap: 40px;
-    }
-}
-@media (max-width:576px)
-{
     .header-nav
     {
+        flex-wrap: wrap;
         gap: 10px;
+    }
+    .main__con:nth-child(1)
+    {
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column-reverse;
+
+    }
+    .content
+    {
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .content-recs
+    {
+        justify-content: center;
+    }
+    .About
+    {
+        font-size: 18px;
+    }
+    .about-us a
+    {
+        font-size: 16px;
     }
     .main__con:nth-child(3)
     {
         display: flex;
-        gap: 0;
+        margin: 0;
+        padding: 0;
         flex-direction: column-reverse;
     }
-    .con__lecIMG img
+    .con__lecturs
     {
-        width: 490px;
-        padding: auto;
         align-items: center;
+        justify-content: center;
+        align-content: center;
+        max-width: 360px;
     }
-    .lecturs-em
+    img
     {
-        display: flex;
-        justify-content: space-evenly;
+        width: 100%;
     }
-    .con-velH
+    .lecIMG-img
     {
-        font-size: 26px;
+        align-items: center;
+        justify-content: center;
+        
     }
-    .con-velP
+    .con__lecIMG
     {
-        margin-top: 30px;
+        max-width: 280px;
+        height: 300px;
     }
-    .CONT
+
+    .lecturs-heading
     {
-        width: 240px;
-    }
-    .CONT-heading
-    {
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
         font-size: 16px;
     }
-    .main__con:nth-child(5)
+    .lecturs-paragraph p
     {
-        padding: 80px 20px;
+        padding: 10px 10px;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
     }
-    .footer__con
+    .lecturs-paragraph p
     {
+        font-size: 12px;
+    }
+    .con__lecturs
+    {
+        padding: 10px 10px;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    .footer__addinfo
+    .con-news
     {
+
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px;
+    }
+    .news-info1
+    {
+        max-width: 300px;
     }
     .footer__nav
     {
         display: flex;
-        justify-content: flex-start;
-        padding-left: 40px;
-        gap: 20px;
-    }
-    .nav-logo
-    {
-        width: 300px;
-    }
-    .nav-contents
-    {
-        width: 300px;
-        padding-left: 20px;
-    }
-    .nav-location
-    {
-        width: 300px;
-    }
-}  
-@media (max-width:390px)
-{
-    .header-items
-    {
-        display: flex;
         flex-direction: column;
         gap: 10px;
     }
-    .header-search
-    {
-        width: 320px;
-    }
-    .header-search input
-    {
-        font-size: 18px;
-    }
-    .header-nav
-    {
-        gap:16px
-    }
-    .header-nav a
-    {
-        font-size: 14px;
-    }
-    .content
-    {
-        width: 170px;
-    }
-    .content-text{
-        font-size: 14px;
-    }
-    .content-img
-    {
-        width: 180px;
-    }
-    .photo
-    {
-        width: 140px;
-        height: 140px;
-    }
-    .photo-text
-    {
-        width: 150px;
-    }
-    .photo-text p
-    {
-        font-size: 14px;
-    }
-    .main__con:nth-child(1)
-    {
-        gap: 30px;
-    }
-    .con__lecIMG
-    {
-        width: 340px;
-    }
-    .con__lecIMG img
-    {
-        width: 300px;
-        padding: auto;
-    }
-    .main__con:nth-child(3)
-    {
-        display: flex;
-    }
-    .con-lecturs
-    {
-        width: 380px;
-    }
-    .lecturs-em{
-        width: 370px;
-    }
-    .lecturs-heading
-    {
-        width: 360px;
-        padding: 10px 40px;
-    }
-    .lecturs-heading h3
-    {
-        font-size: 18px;
-    }
-    .lecturs-paragraph
-    {
-        width: 340px;
-        padding: 10px 40px;
-
-    }
-    .lecturs-paragraph p
-    {
-        font-size: 14px;
-    }
-    .con-velP
-    {
-        width: 380px;
-    }
-    .CONT
-    {
-        width: 160px;
-        height: 360px;
-    }
-    .CONT-heading{
-        font-size: 14px;
-    }
     .footer__addinfo
     {
-        width: 380px;
-    }
-    .addinfo-p 
-    {
-        width: 330px;
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
     }
     .addinfo-txt
     {
-        width: 330px;
+        width: 200px;
     }
-    .addinfo-p p
+    .nav-location 
+    {
+        width: 100%;
+    }
+    .CONT
+    {
+        width: 100%;
+    }
+    .con-velP
+    {
+        width: 100%;
+        margin-top: 0;
+    }
+    .header-nav a
     {
         font-size: 12px;
     }
-
 }
+    
